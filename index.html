@@ -10,6 +10,7 @@
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,600;0,800;1,100;1,200;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
       <!-- stylesheet -->
+      <link rel="stylesheet" href="./utils.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -18,8 +19,8 @@
             <div class="logo"><img src="./public/logo.png" alt="logo" width="50rem" height="50rem"></div>
             <div class="links flex i-c j-b">
                 <a href="#">About</a>
-                <a href="">Projects</a>
-                <a href="">Hire Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
         <div class="container">
@@ -37,10 +38,78 @@
                       web applications that are
                       user-friendly, and that are easy to
                       use.
-                    </p>    
+                    </p> 
+                    <a href="./public/Rahul_Saini.pdf" download="resume">Download My Resume</a>  
                 </div>
             </div>
         </div>
     </header>
+    <!-- details about Projects -->
+    <section id="projects">
+        <div class="container">
+            <h1>Projects</h1>
+            <h5><span>I have a wide range of skills</span></h5>
+            <p>I have some of the good projects in my repository.</p>
+            <div class="pro">
+                <div class="card">
+                    <h3>A Nice Box Game</h3>
+                    <p>
+                      This is a very nice and basic game in which we can move boxes by touching the container.
+                      You can visit this on github
+                    </p>
+                    <a href="https://github.com/rahuleceer/A-Nice-Box-Game">Check This</a>
+                </div>
+                <div class="card">
+                    <h3>Code Evaluator</h3>
+                    <p>
+                      This is a very nice and basic code Evaluator in which we can evaluate the javascript code using base64 encoder and decoder with encryption and decryption.
+                      You can visit this on github
+                    </p>
+                    <a href="https://github.com/rahuleceer/Code-Evaluator">Check This</a>
+                </div>
+                <div class="card">
+                    <h3>TO-DO List(Ajax)</h3>
+                    <p>
+                      This is a very nice and basic to-do list app using ajax in which we can add and remove to-do's.
+                      You can visit this on github
+                    </p>
+                    <a href="https://github.com/rahuleceer/Todolist-by-ajax">Check This</a>
+                </div>
+                <div class="card">
+                    <h3>Toggle Background</h3>
+                    <p>
+                      This is a very nice and basic webpage in which we can toggle the background.
+                      You can visit this on github
+                    </p>
+                    <a href="https://github.com/rahuleceer/togglebackground">Check This</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer id="contact">
+        <div class="container">
+          <h2>Contact <span>Me</span></h2>
+          <form action="">
+            <label for="name">Name :</label>
+            <br>
+            <input type="text" id="name" placeholder="Enter Your Name">
+            <br>
+            <label for="email">Email :</label>
+            <br>
+            <input type="email" id="email" placeholder="Enter Your email">
+            <br>
+            <label for="number">Mobile number :</label>
+            <br>
+            <input type="number" maxlength="10" minlength="10" id="number" placeholder="Enter Your Mobile Number">
+            <br>
+            <label for="msg">Message :</label>
+            <br>
+            <textarea name="" id="msg" cols="50" rows="5"></textarea>
+            <br>
+            <button class="btn btn-secondary"> Send Details </button>
+          </form>
+        </div>
+      </footer>
 </body>
 </html>
